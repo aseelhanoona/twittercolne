@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>tweet tweety</title> 
+        </head>
+    <body>
+            <div class="container">
+                <div class="box" class="menu">
+                    <div class="logo">
+                    <span>  <i class="fa-brands fa-twitter"></i></span> Tweet Tweety
+                    </div>
+                    <div class="icon">
+                        <ul>
+                            <li><a href="#home"><i class="fa-solid fa-house"></i>&nbsp;&nbsp; Home</a></li>
+                            <li><a href="#search"><i class="fa-solid fa-search"></i>&nbsp;&nbsp;Search</a></li>
+                            <li><a href="#home"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;Massage</a></li>
+                            <li><a href="#notification"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;Notifications</a></li>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="box" class="home">
+                    <main>
+                        <div class="main-flex">
+                        <div class="main-feed">
+                            <div class="home-bar" id="home">
+                                <span>Home</span>
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </div>
+                            <div class="new-tweet">
+                                <img class="tweet-img" src="../aseel.png" alt="aseel">
+                                <form>
+                                <div class="new-tweet-details">
+                                    <input type="text" placeholder="what's happening?" id="tweet-text" name="tweet-text" required>
+                                    <button  class="tweet-button" id="tweetbtn" >tweet</button>
+
+                                </div></form></div>
+                                <div id="newtweety" class="feed-tweet1"></div>
+                                <div class="feed-tweet feed-tweet1" id="feedtweet1">
+                                    <img class="tweet-img" src="../aseel.png" alt="aseel">
+                                    <div class="feed-tweet-details">
+                                        <div class="tweeter-details">
+                                            <a href="" class="tweeter-name">
+                                                AseelHanoona
+                                                <span class="tweeter-handle">
+                                                    @aseel .1h
+                                                </span>
+                                            </a>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <p><div id="tweettext"></div></p>
+                                        </div>
+                                        <div class="tweet-icons">
+                                           <i class="fa-regular fa-comment"></i>
+                                           <button class="retwwetbtn"> <i class="fa-solid fa-retweet"></i></button>
+                                            <button id="love" ><i class="fa-solid fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feed-tweet">
+                                    <img class="tweet-img" src="../aseel.png" alt="aseel">
+                                    <div class="feed-tweet-details">
+                                        <div class="tweeter-details">
+                                            <a href="" class="tweeter-name">
+                                                AseelHanoona
+                                                <span class="tweeter-handle">
+                                                    @aseel .1h
+                                                </span>
+                                            </a>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <p><div class="tweettext">hello!! I'am aseel hanoona  , how are you?!</div></p>
+                                        </div>
+                                        <div class="tweet-icons">
+                                            <i class="fa-regular fa-comment"></i>
+                                           <button class="retwwetbtn"> <i class="fa-solid fa-retweet"></i></button>
+                                           <button id="love" onclick="lovefun()" ><i class="fa-solid fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+
+                        </div>
+                        <div class="side-feed">
+                            <div class="search" id="search">
+                                <input type="text" placeholder="Search TWEET TWEETY">
+                            </div>
+                            <div class="trending">
+                                <h1 class="h1-title">What's Happening ?</h1>
+                                <div class="trending-item">
+                                    <div class="item-category">
+                                      <span>Trends for you</span>  
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <p>#Palestinian</p>
+                                    <span>200k tweety</span>
+                                </div>
+                                <div class="trending-item">
+                                    <div class="item-category">
+                                      <span>Trends for you</span>  
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <p>#aseel</p>
+                                    <span>150k tweety</span>
+                                </div>
+                                <div class="trending-item">
+                                    <div class="item-category">
+                                      <span>Trends for you</span>  
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div>
+                                    <p>#mira</p>
+                                    <span>100k tweety</span>
+                                </div>
+                            </div>
+                            <div class="follow"></div>
+                        </div>
+                        </div>
+                    </main>
+            </div>
+            <script src="index.js" type="text/javascript"></script>
+    </body> 
+</html>
